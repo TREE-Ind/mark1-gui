@@ -1,0 +1,77 @@
+2017-06-30 19:37:21,333 - mycroft.configuration - INFO - Loading configuration: /home/btotharye/mycroft-core/mycroft/configuration/mycroft.conf
+2017-06-30 19:37:21,333 - mycroft.configuration - DEBUG - Configuration '/home/btotharye/mycroft-core/mycroft/configuration/mycroft.conf' loaded
+2017-06-30 19:37:21,333 - mycroft.configuration - DEBUG - Configuration '/home/btotharye/.mycroft/mycroft.conf' not found
+2017-06-30 19:37:21,333 - mycroft.configuration - INFO - Loading configuration: mycroft.ai
+2017-06-30 19:37:21,436 - requests.packages.urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.mycroft.ai
+2017-06-30 19:37:22,389 - requests.packages.urllib3.connectionpool - DEBUG - https://api.mycroft.ai:443 "GET /v1/device//setting HTTP/1.1" 401 38
+2017-06-30 19:37:22,395 - requests.packages.urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.mycroft.ai
+2017-06-30 19:37:23,236 - requests.packages.urllib3.connectionpool - DEBUG - https://api.mycroft.ai:443 "GET /v1/auth/token HTTP/1.1" 401 38
+2017-06-30 19:37:23,237 - mycroft.configuration - WARNING - Failed to fetch remote configuration: HTTPError(u'The supplied authentication is invalid',)
+2017-06-30 19:37:23,238 - mycroft.configuration - INFO - Using cached configuration if available
+2017-06-30 19:37:23,238 - mycroft.configuration - DEBUG - Configuration '/opt/mycroft/web_config_cache.json' not found
+2017-06-30 19:37:23,238 - mycroft.configuration - INFO - Loading configuration: /etc/mycroft/mycroft.conf
+2017-06-30 19:37:23,238 - mycroft.configuration - DEBUG - Configuration '/etc/mycroft/mycroft.conf' not found
+2017-06-30 19:37:23,238 - mycroft.configuration - DEBUG - Configuration '/home/btotharye/.mycroft/mycroft.conf' not found
+2017-06-30 19:37:23,238 - mycroft.configuration - INFO - Loading configuration: /home/btotharye/.mycroft/mycroft.conf
+2017-06-30 19:37:23,238 - mycroft.configuration - DEBUG - Configuration '/home/btotharye/.mycroft/mycroft.conf' not found
+2017-06-30 19:37:23,238 - mycroft.configuration - DEBUG - Configuration '/home/btotharye/.mycroft/mycroft.conf' not found
+2017-06-30 19:37:23,275 - mycroft.messagebus.client.ws - INFO - Connected
+2017-06-30 19:37:23,297 - requests.packages.urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.mycroft.ai
+2017-06-30 19:37:24,633 - requests.packages.urllib3.connectionpool - DEBUG - https://api.mycroft.ai:443 "GET /v1/device/ HTTP/1.1" 301 106
+2017-06-30 19:37:24,637 - requests.packages.urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): api.mycroft.ai
+2017-06-30 19:37:24,729 - requests.packages.urllib3.connectionpool - DEBUG - http://api.mycroft.ai:80 "GET /v1/device HTTP/1.1" 302 0
+2017-06-30 19:37:24,732 - requests.packages.urllib3.connectionpool - DEBUG - Resetting dropped connection: api.mycroft.ai
+2017-06-30 19:37:25,219 - requests.packages.urllib3.connectionpool - DEBUG - https://api.mycroft.ai:443 "GET /v1/device HTTP/1.1" 401 38
+2017-06-30 19:37:25,224 - requests.packages.urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.mycroft.ai
+2017-06-30 19:37:25,479 - requests.packages.urllib3.connectionpool - DEBUG - https://api.mycroft.ai:443 "GET /v1/auth/token HTTP/1.1" 401 38
+2017-06-30 19:37:25,480 - Skills - DEBUG - {"type": "connected", "data": {}, "context": null}
+2017-06-30 19:37:25,481 - Skills - DEBUG - {"type": "mycroft.internet.connected", "data": {}, "context": null}
+2017-06-30 19:37:25,482 - Skills - DEBUG - {"type": "enclosure.reset", "data": {}, "context": null}
+2017-06-30 19:37:25,482 - Skills - DEBUG - {"type": "recognizer_loop:utterance", "data": {"lang": "en-us", "utterances": ["pair my device"]}, "context": null}
+2017-06-30 19:37:25,484 - mycroft.skills.intent_service - ERROR - 
+Traceback (most recent call last):
+  File "/home/btotharye/mycroft-core/mycroft/skills/intent_service.py", line 54, in handle_utterance
+    normalize(utterance, lang), 100))
+StopIteration
+2017-06-30 19:37:25,484 - Skills - DEBUG - {"type": "skill_manager", "data": {}, "context": null}
+2017-06-30 19:37:25,484 - Skills - DEBUG - {"type": "intent_failure", "data": {"lang": "en-us", "utterance": "pair my device"}, "context": null}
+2017-06-30 19:37:25,487 - mycroft.skills.core - INFO - ATTEMPTING TO LOAD SKILL: mycroft-activities-plasma-skill
+2017-06-30 19:37:25,506 - Skills - DEBUG - {"type": "register_vocab", "data": {"start": "create a new activity", "end": "ActivitiesCreateKeyword"}, "context": null}
+2017-06-30 19:37:25,508 - Skills - DEBUG - {"type": "register_vocab", "data": {"start": "create new activity", "end": "ActivitiesCreateKeyword"}, "context": null}
+2017-06-30 19:37:25,508 - Skills - DEBUG - {"type": "register_vocab", "data": {"start": "create activity", "end": "ActivitiesCreateKeyword"}, "context": null}
+2017-06-30 19:37:25,509 - Skills - DEBUG - {"type": "register_vocab", "data": {"start": "start a new activity", "end": "ActivitiesCreateKeyword"}, "context": null}
+2017-06-30 19:37:25,509 - Skills - DEBUG - {"type": "register_vocab", "data": {"start": "create new activities", "end": "ActivitiesCreateKeyword"}, "context": null}
+2017-06-30 19:37:25,509 - Skills - DEBUG - {"type": "register_vocab", "data": {"start": "start new activities", "end": "ActivitiesCreateKeyword"}, "context": null}
+2017-06-30 19:37:25,510 - Skills - DEBUG - {"type": "register_vocab", "data": {"start": "create activities", "end": "ActivitiesCreateKeyword"}, "context": null}
+2017-06-30 19:37:25,510 - Skills - DEBUG - {"type": "register_vocab", "data": {"start": "new activity", "end": "ActivitiesCreateKeyword"}, "context": null}
+2017-06-30 19:37:25,510 - Skills - DEBUG - {"type": "register_vocab", "data": {"start": "new activities", "end": "ActivitiesCreateKeyword"}, "context": null}
+2017-06-30 19:37:25,511 - Skills - DEBUG - {"type": "register_vocab", "data": {"start": "stop current activity", "end": "ActivitiesStopKeyword"}, "context": null}
+2017-06-30 19:37:25,511 - Skills - DEBUG - {"type": "register_vocab", "data": {"start": "stop activity", "end": "ActivitiesStopKeyword"}, "context": null}
+2017-06-30 19:37:25,512 - Skills - DEBUG - {"type": "register_vocab", "data": {"start": "show current activities", "end": "ActivitiesShowKeyword"}, "context": null}
+2017-06-30 19:37:25,512 - Skills - DEBUG - {"type": "register_vocab", "data": {"start": "show activities", "end": "ActivitiesShowKeyword"}, "context": null}
+2017-06-30 19:37:25,512 - Skills - DEBUG - {"type": "register_vocab", "data": {"start": "activities", "end": "ActivitiesShowKeyword"}, "context": null}
+2017-06-30 19:37:25,513 - Skills - DEBUG - {"type": "register_vocab", "data": {"start": "display current activities", "end": "ActivitiesShowKeyword"}, "context": null}
+2017-06-30 19:37:25,513 - Skills - DEBUG - {"type": "register_vocab", "data": {"start": "display activities", "end": "ActivitiesShowKeyword"}, "context": null}
+2017-06-30 19:37:25,514 - Skills - DEBUG - {"type": "register_vocab", "data": {"start": "remove activity", "end": "ActivitiesRemoveKeyword"}, "context": null}
+2017-06-30 19:37:25,514 - Skills - DEBUG - {"type": "register_vocab", "data": {"start": "remove the activity", "end": "ActivitiesRemoveKeyword"}, "context": null}
+2017-06-30 19:37:25,515 - Skills - DEBUG - {"type": "register_vocab", "data": {"start": "delete activity", "end": "ActivitiesRemoveKeyword"}, "context": null}
+2017-06-30 19:37:25,515 - Skills - DEBUG - {"type": "register_vocab", "data": {"start": "delete the activity", "end": "ActivitiesRemoveKeyword"}, "context": null}
+2017-06-30 19:37:25,515 - Skills - DEBUG - {"type": "register_vocab", "data": {"start": "switch current activity", "end": "ActivitiesSwitchKeyword"}, "context": null}
+2017-06-30 19:37:25,516 - Skills - DEBUG - {"type": "register_vocab", "data": {"start": "switch activity", "end": "ActivitiesSwitchKeyword"}, "context": null}
+2017-06-30 19:37:25,516 - Skills - DEBUG - {"type": "register_vocab", "data": {"start": "create a new activity", "end": "ActivitiesCreateKeyword"}, "context": null}
+2017-06-30 19:37:25,517 - Skills - DEBUG - {"type": "register_vocab", "data": {"start": "create new activity", "end": "ActivitiesCreateKeyword"}, "context": null}
+2017-06-30 19:37:25,519 - mycroft.skills.core - INFO - Loaded mycroft-activities-plasma-skill
+2017-06-30 19:37:25,519 - Skills - DEBUG - {"type": "register_vocab", "data": {"start": "create activity", "end": "ActivitiesCreateKeyword"}, "context": null}
+2017-06-30 19:37:25,519 - Skills - DEBUG - {"type": "register_vocab", "data": {"start": "start a new activity", "end": "ActivitiesCreateKeyword"}, "context": null}
+2017-06-30 19:37:25,519 - Skills - DEBUG - {"type": "register_vocab", "data": {"start": "create new activities", "end": "ActivitiesCreateKeyword"}, "context": null}
+2017-06-30 19:37:25,520 - Skills - DEBUG - {"type": "register_vocab", "data": {"start": "start new activities", "end": "ActivitiesCreateKeyword"}, "context": null}
+2017-06-30 19:37:25,520 - Skills - DEBUG - {"type": "register_vocab", "data": {"start": "create activities", "end": "ActivitiesCreateKeyword"}, "context": null}
+2017-06-30 19:37:25,520 - Skills - DEBUG - {"type": "register_vocab", "data": {"start": "new activity", "end": "ActivitiesCreateKeyword"}, "context": null}
+2017-06-30 19:37:25,521 - Skills - DEBUG - {"type": "register_vocab", "data": {"start": "new activities", "end": "ActivitiesCreateKeyword"}, "context": null}
+2017-06-30 19:37:25,521 - Skills - DEBUG - {"type": "register_vocab", "data": {"start": "stop current activity", "end": "ActivitiesStopKeyword"}, "context": null}
+2017-06-30 19:37:25,521 - Skills - DEBUG - {"type": "register_vocab", "data": {"start": "stop activity", "end": "ActivitiesStopKeyword"}, "context": null}
+2017-06-30 19:37:25,522 - Skills - DEBUG - {"type": "register_vocab", "data": {"start": "show current activities", "end": "ActivitiesShowKeyword"}, "context": null}
+2017-06-30 19:37:25,522 - Skills - DEBUG - {"type": "register_vocab", "data": {"start": "show activities", "end": "ActivitiesShowKeyword"}, "context": null}
+2017-06-30 19:37:25,522 - Skills - DEBUG - {"type": "register_vocab", "data": {"start": "activities", "end": "ActivitiesShowKeyword"}, "context": null}
+2017-06-30 19:37:25,523 - Skills - DEBUG - {"type": "register_vocab", "data": {"start": "display current activities", "end": "ActivitiesShowKeyword"}, "context": null}
+2017-06-30 19:37:25,556 - Skills - DEBUG - {"type": "register_vocab", "data": {"start": "", "end": "KrunnerPlasmaDesktopSkillKeyword"}, "context": null}
