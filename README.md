@@ -8,7 +8,7 @@ Currently setup for http://mark1_ip:8080 will take you to the login page
 
 1. Clone the repo to your mark 1 device `git clone https://github.com/Geeked-Out-Solutions/mark1-gui.git`
 2. Change to the new mark1-gui dir, `cd mark1-gui`
-3. Install requirements: `sudo pip install requirements.txt`
+3. Install requirements: `sudo pip install -r requirements.txt`
 4. Run the app, `python app.py`
 
 
