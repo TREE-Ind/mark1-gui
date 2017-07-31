@@ -87,6 +87,20 @@
           </div>
 
           <h2 class="sub-header">Installed Skills</h2>
+          <table style="width:100%">
+          <tr>
+            <th>Skill Name</th>
+            <th>Uninstall</th>
+          </tr>
+          {% for skill in mycroft_skills %}
+              <tr>
+                <td>{{ skill }}</td>
+                <td><form action="{{ url_for('delete_skill') }}" method=post class=delete-skill>
+                <input type=hidden value="{{ skill }}"name=skill_to_delete></input>
+                <input type=submit></input></form></td>
+              </tr>
+          {% endfor %}
+          </table>
           </div>
         </div>
       </div>
