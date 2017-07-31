@@ -20,4 +20,4 @@ The username and pw for the login is taken from the config.json file.  After log
 ![](https://user-images.githubusercontent.com/1426587/28775285-1fe61530-75bf-11e7-8d47-0aa4524d7b8a.png)
 
 # Logout
-You can currently logout by going to http://mark1_ip:8080/logout.html, will be adding official logout button shortly.
+Logout button has now been implemented and will log you out.
