@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="/static/style.css" type="text/css">
+<html>
+  <head>
+    <title>Mycroft - Gui 1.0</title>
+  </head>
+
+  <body>
+    <h2>Hello {{ name }}!</h2>
+  </body>
+
+  <body>
+    <h2>The name of the mark 1: {{sys_data.machine_name}}</h2>
+  </body>
+
+  <body>
+    <h2>The current version of mycroft running: {{sys_data.mycroft_version}}
+  </body>
+
+  <body>
+    <h2> The time on the mark 1: {{sys_data.current_time}}</h2>
+  </body>
+
+  <body>
+    <h2> The current list of installed skills are: {{sys_data.installed_skills}}
+  </body>
+
+  <body>
+    <h2> The boot info is: {{boot_info}}</h2>
+  </body>
+
+  <body>
+    <h2> The last 10 logs of the mycroft-skill log are: {{sys_data.skills_log}}</h2>
+  </body>
+</html>

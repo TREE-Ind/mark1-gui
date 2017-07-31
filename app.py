@@ -26,6 +26,8 @@ def home():
             sys_data['machine_name'] = platform.node()
             sys_data['mycroft_version'] = subprocess.check_output(['dpkg -s mycroft-core | grep Version'], shell=True)
             sys_data['installed_skills'] = os.listdir('/opt/mycroft/skills')
+            sys_data['skills_log'] = subprocess.check_output(['tail -n 10 /var/log/mycroft-skills.log'], shell=True)
+            print(type(sys_data['skills_log']))
             disk_usage_info = disk_usage_list()
         except Exception as ex:
             print(ex)
@@ -47,6 +49,17 @@ def do_admin_login():
 def logout():
     session['logged_in'] = False
     return home()
+
+@app.context_processor
+def boot_info():
+    item = {'start_time': 'Na','running_since':'Na'}
+    try:
+        item['running_duration'] = subprocess.check_output(['uptime -p'], shell=True)
+        item['start_time'] = subprocess.check_output(['uptime -s'], shell=True)
+    except Exception as ex:
+        print ex
+    finally:
+        return dict(boot_info = item)
 
 def disk_usage_list():
      try:
